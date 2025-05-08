@@ -74,6 +74,12 @@ noremap J N
 noremap K E
 noremap L I
 
+nnoremap <A-m> <C-w>h
+nnoremap <A-n> <C-w>j
+nnoremap <A-e> <C-w>k
+nnoremap <A-i> <C-w>l
+
+
 " Editor options
 set number
 set relativenumber
