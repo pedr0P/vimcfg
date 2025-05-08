@@ -115,11 +115,11 @@ set foldcolumn=1
 set foldmethod=manual
 set incsearch
 
-augroup remember_folds
-    autocmd!
-    autocmd BufWinLeave * mkview
-    autocmd BufWinEnter * silent! loadview
-augroup END
+augroup AutoSaveGroup
+  autocmd!
+  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview!
+  autocmd BufWinEnter ?* silent! loadview
+augroup end
 
 "set fillchars+=foldopen:┌,foldsep:│,foldclose:,fold:\ 
 set fillchars+=foldopen:-,foldsep:│,foldclose:>,fold:\ 
