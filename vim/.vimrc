@@ -1,6 +1,6 @@
 syntax on
 
-let mapleader = " "
+let mapleader = ","
 
 " VIM:
   " Save
@@ -189,7 +189,7 @@ let g:lsp_semantic_enabled = 1
 "" Signs for diagnostics
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
-let g:lsp_diagnostics_virtual_text_align = 0
+let g:lsp_diagnostics_virtual_text_enabled = 0
 
 "" Signs for errors, warnings, etc.
 let g:lsp_diagnostics_signs_error = {'text': ''}
@@ -216,7 +216,7 @@ function! s:on_lsp_buffer_enabled() abort
     nnoremap <buffer> <C-c>li :LspImplementation<CR>
     nnoremap <buffer> <C-c>lt :LspTypeDefinition<CR>
     nnoremap <buffer> <C-c>d :LspDocumentDiagnostics<CR>
-    nnoremap <buffer> E :LspHover<CR>
+    nnoremap <buffer> <C-c>k :LspHover<CR>
 endfunction
 
 augroup lsp_install
