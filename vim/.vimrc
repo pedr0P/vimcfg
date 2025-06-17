@@ -74,10 +74,14 @@ noremap J N
 noremap K E
 noremap L I
 
-nnoremap <A-m> <C-w>h
-nnoremap <A-n> <C-w>j
-nnoremap <A-e> <C-w>k
-nnoremap <A-i> <C-w>l
+" nnoremap <A-m> <C-w>h
+" nnoremap <A-n> <C-w>j
+" nnoremap <A-e> <C-w>k
+" nnoremap <A-i> <C-w>l
+nnoremap <C-w>m <C-w>h
+nnoremap <C-w>n <C-w>j
+nnoremap <C-w>e <C-w>k
+nnoremap <C-w>i <C-w>l
 
 
 " Editor options
@@ -232,5 +236,3 @@ augroup END
 let &t_EI = "\<Esc>[1 q" " Normal mode  - Block cursor
 let &t_SI = "\<Esc>[5 q" " Insert mode  - Line cursor
 let &t_SR = "\<Esc>[3 q" " Replace mode - Underline cursor
-
-
