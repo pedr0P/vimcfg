@@ -144,6 +144,8 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'vim-utils/vim-man'
 " Cool theme
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'ghifarit53/tokyonight-vim'
+
 " Status line
 Plug 'itchyny/lightline.vim'
 " Lsp server
@@ -159,6 +161,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'Raimondi/delimitMate'
 " Clipboard for Wayland
 Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'flazz/vim-colorschemes'
+Plug 'cseelus/vim-colors-lucid'
 " For -clipboard or -xterm_clipboard
 Plug 'christoomey/vim-system-copy'
 
@@ -169,10 +173,11 @@ if has('termiguicolors')
     set termguicolors
 endif
 
-let g:tokyonight_style = 'storm' " night or storm
-let g:tokyonight_enable_italic = 1
+"let g:tokyonight_style = 'storm' " night or storm
+"let g:tokyonight_enable_italic = 1
 
-colorscheme tokyonight
+"colorscheme tokyonight
+colorscheme antares
 set background=dark
 
 "" Light line
@@ -227,3 +232,5 @@ augroup END
 let &t_EI = "\<Esc>[1 q" " Normal mode  - Block cursor
 let &t_SI = "\<Esc>[5 q" " Insert mode  - Line cursor
 let &t_SR = "\<Esc>[3 q" " Replace mode - Underline cursor
+
+
